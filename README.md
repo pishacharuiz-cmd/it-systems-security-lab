@@ -1,102 +1,102 @@
-# GRC, Security Automation & AI Governance Portfolio
+# IT Systems & Security Lab
 
-Hands-on Governance, Risk, and Compliance (GRC) projects focused on security controls, risk assessment, audit evidence, cloud compliance, policy-as-code, and AI governance engineering.
+Hands-on projects across **IT operations, systems integrity, security controls, risk automation, and AI governance**. This portfolio shows how I investigate technical and business problems, validate data and configurations, translate requirements into controls, test results, and document remediation.
 
-The portfolio emphasizes a practical workflow:
+**Practical workflow:** Understand the environment → Identify the issue or risk → Validate evidence → Test controls or data → Recommend remediation → Document results.
 
-**Identify risk → Map requirements → Define controls → Evaluate policy → Test → Document evidence → Human review and remediation**
-
-Projects are educational labs, simulations, or sample documentation. They do not represent production deployment, access to a real company's environment, or certification of legal or regulatory compliance.
+> **Scope and transparency:** These are educational labs, simulations, and sample documentation. They do not represent production deployments or access to a real company's environment. Framework mappings are illustrative and do not certify compliance.
 
 ## Featured Projects
 
-### 1. AI Governance Engineering Lab v2
+### AI Governance Engineering Lab
+[View project](./AI-Governance-Engineering-Lab-v2/)
 
-[Open the AI Governance Engineering Lab v2](./AI-Governance-Engineering-Lab-v2/)
+Uses Open Policy Agent (OPA) and Rego to demonstrate how AI governance requirements can be translated into testable policy rules.
 
-A policy-as-code lab exploring how AI governance requirements can be translated into testable technical controls using Open Policy Agent (OPA) and Rego.
+- AI system inventory, risk register, ownership, treatment, and residual-risk tracking
+- Policy checks for restricted-data privacy, third-party AI vendor approval, fairness validation, and human oversight
+- Positive and negative test cases, with evidence links from requirements to controls, rules, tests, and review records
+- GitHub Actions workflow to run policy tests when the lab changes
+- High-level mapping to NIST AI RMF and ISO/IEC 42001 concepts
 
-**What it demonstrates**
-- AI system inventory and risk register
-- Risk methodology, ownership, treatment, and residual-risk tracking
-- Policy enforcement for restricted-data privacy, third-party AI vendor approval, fairness validation, and human oversight
-- Positive and negative policy test cases
-- Vendor assessment and high-level framework mappings to NIST AI RMF and ISO/IEC 42001
-- Evidence traceability from requirement to control, policy rule, test, result, and review record
-- GitHub Actions workflow for running policy tests when the lab changes
+**Documented test run:** 8/8 test cases passed and 96.30% overall coverage. The 0.80 fairness threshold is a simulated lab value, not a regulatory requirement. These results apply only to the defined scenarios and do not establish production readiness or compliance.
 
-**Recorded validation:** 8 of 8 test cases passed, with 96.30% overall coverage in the documented test run. The 0.80 fairness threshold is a simulated portfolio value, not a regulatory requirement. These results validate the defined scenarios; they do not establish production readiness or regulatory compliance.
+### Risk-as-Code
+[View project](./Risk-As-Code/)
 
-### 2. Risk-as-Code GRC Lab
+A Python and OPA/Rego workflow for evaluating structured risk data and producing repeatable results.
 
-[Open Risk-as-Code](./Risk-As-Code/)
-
-A Python and OPA/Rego lab that turns structured risk-register data into repeatable evaluations and escalation decisions.
-
-**What it demonstrates**
-- YAML-based risk data and 5×5 likelihood × impact scoring
-- Risk-rating and escalation logic in Python
-- Input validation and duplicate-ID detection
-- Machine-readable JSON reports
-- Optional pipeline failure for open High/Critical risks
+- YAML-based risk register with 5×5 likelihood-and-impact scoring
+- Risk-rating and escalation logic, input validation, and duplicate-ID detection
+- Machine-readable JSON reports and optional pipeline failure for open High/Critical risks
 - OPA/Rego policy evaluation and unit tests
-- SHA-256 File Integrity Monitoring (FIM)
+- SHA-256 file-integrity monitoring
 - Separation of risk data, evaluation logic, and policy enforcement
 
-The scoring bands and escalation behavior are the methodology used in this educational lab, not a replacement for an organization's approved enterprise risk methodology.
+Scoring bands and escalation rules are the lab's own illustrative methodology, not a substitute for an organization's approved risk process.
 
-### 3. AWS S3 Compliance-as-Code Auditor
+### AWS S3 Compliance-as-Code Auditor
 
-A Python lab that evaluates simulated AWS S3 configuration data against selected security requirements associated with NIST SP 800-53 and FedRAMP.
+A Python lab that checks **simulated** AWS S3 configuration data against selected security requirements associated with NIST SP 800-53 and FedRAMP.
 
-Focus areas include encryption, public-access settings, control mapping, remediation recommendations, and unit testing. The infrastructure data is simulated for portfolio use.
+- Encryption and public-access configuration checks
+- Control mapping and remediation recommendations
+- Repeatable evaluation and unit testing
 
-### 4. SCF Governance & Control Mapping
+### Business Data & Systems Integrity Lab
 
-A control-mapping lab using the Secure Controls Framework (SCF) to connect governance and technical requirements with practical evidence and follow-up actions.
+A simulated business-systems investigation using SQL and Python.
 
-Topics include policy publishing, exception management, privileged-access reviews, MFA, AI governance, and evidence mapping.
+- Identify inconsistencies across data sources
+- Validate records and investigate discrepancies
+- Describe potential business impact
+- Document corrective actions and post-remediation validation
 
-### 5. Vendor Security Review
+### Linux Server Audit
 
-A simulated third-party risk assessment for a fictional analytics vendor. It considers independent security assurance, data protection, access management, compensating controls, and remediation needs. Findings are documented as a learning exercise, not a real procurement decision.
+A baseline review of a simulated Linux server focused on SSH and privileged-access settings. Identifies configuration concerns, relates findings to security criteria, and documents corrective-action recommendations.
 
-### 6. Linux Server Audit
+### SCF Governance & Control Mapping
 
-A baseline review of a simulated Linux server focused on SSH and privileged-access settings. The lab identifies configuration issues, relates them to security criteria, and documents corrective-action recommendations.
+Maps selected governance and technical requirements to controls, evidence, and follow-up actions. Topics include policy publishing, exceptions, privileged-access reviews, MFA, AI governance, and evidence mapping.
 
-### 7. Corporate Access Control Policy
+### Vendor Security Review
 
-A sample policy covering MFA, least privilege, access approvals, and periodic access reviews. It demonstrates how common security requirements can be translated into practical policy language.
+A simulated third-party risk review for a fictional analytics vendor, covering independent assurance, data protection, access management, compensating controls, findings, and remediation needs.
 
-### 8. Business Data & Systems Integrity Lab
+### Corporate Access Control Policy
 
-A simulated business-systems investigation using SQL and Python to identify cross-system data inconsistencies, document business risk, and demonstrate remediation and validation workflows.
+Sample policy language covering MFA, least privilege, access approvals, and periodic access reviews, demonstrating how security expectations can be expressed as operational requirements.
 
-## Tools & Technologies
+## Skills Demonstrated
 
-- **Programming and data:** Python, SQL, JSON, YAML
-- **Policy-as-Code:** Open Policy Agent (OPA), Rego
-- **Testing and integrity:** Python unit tests, OPA tests, SHA-256 file integrity checks
-- **Automation:** GitHub Actions
-- **Governance and risk:** NIST SP 800-53, NIST CSF, NIST AI RMF, ISO/IEC 42001 concepts, SOC 2, FedRAMP, Secure Controls Framework (SCF)
-- **Technical areas:** AWS security concepts, Linux configuration, access control, third-party risk, audit evidence, remediation tracking
+| Area | Practical examples |
+|---|---|
+| IT and systems | Linux configuration review, access controls, systems integrity, troubleshooting and validation |
+| Data and scripting | Python, SQL, JSON, YAML, input validation, repeatable reports |
+| Security automation | OPA, Rego, unit tests, policy evaluation, GitHub Actions, SHA-256 integrity checks |
+| Risk and controls | Risk registers, likelihood/impact scoring, control mapping, evidence, findings, remediation tracking |
+| Cloud security concepts | Simulated AWS S3 configuration checks, encryption, public-access settings |
+| Governance and AI risk | NIST AI RMF and ISO/IEC 42001 concepts, AI inventory, vendor review, human oversight |
 
-Framework references and mappings are high-level portfolio examples. They do not imply that an individual control or policy rule satisfies an entire framework requirement.
+## Tools & Framework References
 
-## GRC Workflow
+**Tools:** Python · SQL · Linux · Open Policy Agent (OPA) · Rego · GitHub Actions · JSON · YAML
 
-Across the projects, the general workflow is:
+**Frameworks and reference material:** NIST SP 800-53 · NIST Cybersecurity Framework (CSF) · NIST AI RMF · ISO/IEC 42001 concepts · SOC 2 concepts · FedRAMP · Secure Controls Framework (SCF)
 
-1. **Identify** the system, business context, and risk.
-2. **Assess** likelihood, impact, and relevant requirements.
-3. **Define** controls, owners, and expected evidence.
-4. **Evaluate** structured records and policy conditions.
-5. **Test** expected allow, deny, and exception scenarios.
-6. **Document** results, limitations, and evidence.
-7. **Review and remediate** findings with responsible human owners.
-8. **Reassess** when conditions or risks change.
+Framework references and mappings are high-level learning examples. A mapping does not mean that one policy, test, or control satisfies an entire framework requirement.
+
+## How I Approach a Problem
+
+1. **Understand** the system, business process, and expected outcome.
+2. **Assess** the available records, configuration, requirements, and potential impact.
+3. **Verify** the issue with evidence rather than assuming a root cause.
+4. **Test** the data, configuration, or policy against defined expectations.
+5. **Recommend or apply** an appropriate corrective action within the authorized scope.
+6. **Validate** the result and check whether the issue remains.
+7. **Document** evidence, limitations, ownership, and follow-up needs.
 
 ## Portfolio Boundaries
 
-These projects are intended to demonstrate practical learning and repeatable technical workflows. Sample records, simulated infrastructure, and policy thresholds are illustrative. Automated outputs are decision support—not proof of control effectiveness or a certification of compliance. Human review and organization-specific validation remain necessary before real-world use.
+The projects demonstrate learning, structured investigation, and repeatable technical workflows. Sample records, simulated infrastructure, and policy thresholds are illustrative. Automated outputs support human decisions; they are not proof of control effectiveness, a production security assessment, or a certification of compliance. Real-world use requires authorization, environment-specific validation, and review by responsible owners.
