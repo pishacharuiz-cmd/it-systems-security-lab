@@ -1,0 +1,5 @@
+{
+  "project": "Local AI Governance Assistant",
+  "model": "llama3.2:3b",
+  "memories": []
+}
