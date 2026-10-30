@@ -92,6 +92,7 @@ The scripts use sample or local data and are learning examples, not a validated 
 - **[Corporate Access Control Policy](./policies/Corporate_Access_Control%20Policy.md)** — sample policy language covering MFA, least privilege, access approvals, and periodic access reviews.
 - **[Business Data & Systems Integrity Lab](./business-data-systems-integrity-lab/)** — detailed SQL/Python workflow for reconciliation, findings, and evidence.
 - **[AI governance policy example](./policies/ai_governance/policy.rego)** — a separate Rego example for expressing selected governance conditions as policy.
+- **[Local AI Governance Assistant](./Local-AI-Governance-Assistant/)** — an active Ollama/Python prototype exploring local AI assistance, bounded project-file tools, and persistent project memory. The model-driven memory-recall workflow remains unresolved; development notes and safeguards are documented.
 
 ## Skills Demonstrated
 
