@@ -8,6 +8,21 @@ Hands-on projects across **IT operations, data integrity, security controls, IT 
 
 ## Featured Projects
 
+### 1. SCF-Based MFA Control Assessment
+[View project](./GRC-Control-Assessment-Lab/)
+
+A fictional, scenario-based assessment of SCF control IAC-06 (Multi-Factor Authentication) for a healthcare organization.
+
+- Connects a broad cybersecurity threat category (MT2) and Access Control Risk to an authentication control
+- Defines remote-access scope and distinguishes MFA applicability from physical tasks and specialized OT environments
+- Identifies SCF Evidence Request List references (E-DCH-08, E-CPL-07, E-CPL-08) and additional technical evidence to request
+- Documents a preliminary partial-implementation finding, potential impact, remediation recommendations, and retesting criteria
+- Emphasizes that evidence must be obtained and validated before a preliminary scenario finding becomes a verified conclusion
+
+**Why it matters:** Demonstrates the GRC assessment lifecycle: **Scope → Threat/Risk Context → Control → Evidence → Gap → Remediation → Retest**. The organization and scenario are fictional; no real audit or production validation is claimed.
+
+### 2. IT General Controls (ITGC) Audit Lab
+
 ### 1. IT General Controls (ITGC) Audit Lab
 [View project](./ITGC-Audit-Lab/)
 
@@ -20,7 +35,7 @@ A simulated ITGC review using evidence files, control-testing procedures, findin
 
 **Why it matters:** Shows practical IT control testing and evidence-based analysis—not just framework summaries. All organizations, records, and findings in the lab are fictional or simulated.
 
-### 2. Business Data & Systems Integrity Lab
+### 3. Business Data & Systems Integrity Lab
 [View project](./business-data-systems-integrity-lab/)
 
 A simulated investigation of customer records moving between a source CRM and a downstream operational database, using SQL and Python.
@@ -32,7 +47,7 @@ A simulated investigation of customer records moving between a source CRM and a 
 
 **Why it matters:** Relevant to application support, business systems, data operations, and technical analyst roles where accurate records and reliable integrations matter.
 
-### 3. AI Governance Engineering Lab
+### 4. AI Governance Engineering Lab
 [View project](./AI-Governance-Engineering-Lab-v2/)
 
 Uses Open Policy Agent (OPA) and Rego to demonstrate how selected AI governance requirements can be translated into testable policy rules.
@@ -45,7 +60,7 @@ Uses Open Policy Agent (OPA) and Rego to demonstrate how selected AI governance 
 
 **Documented test evidence:** 8/8 test cases passed and 96.30% overall coverage in the recorded local run. The 0.80 fairness threshold is a simulated lab value, not a regulatory requirement. These results apply to the defined scenarios and do not establish production readiness or compliance.
 
-### 4. Risk-as-Code
+### 5. Risk-as-Code
 [View project](./Risk-As-Code/)
 
 A Python and OPA/Rego workflow for evaluating structured risk data and producing repeatable results.
@@ -59,7 +74,7 @@ A Python and OPA/Rego workflow for evaluating structured risk data and producing
 
 Scoring bands and escalation rules are the lab's illustrative methodology, not a substitute for an organization's approved risk process.
 
-### 5. AWS S3 Compliance-as-Code Auditor
+### 6. AWS S3 Compliance-as-Code Auditor
 [View project](./AWS%20S3%20Compliance-as-Code%20Auditor%20NIST%20SP%20800-53%20%20FedRAMP/)
 
 A Python lab that evaluates **simulated** AWS configuration data against selected security requirements associated with NIST SP 800-53 and FedRAMP.
@@ -71,7 +86,7 @@ A Python lab that evaluates **simulated** AWS configuration data against selecte
 
 This lab does not connect to or assess a live AWS account.
 
-### 6. PCI DSS Automated Compliance Lab
+### 7. PCI DSS Automated Compliance Lab
 [View project](./pci-dss-automated-compliance-lab/)
 
 A collection of small scripts and sample configurations illustrating technical checks related to payment-environment security.
